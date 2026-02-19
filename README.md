@@ -1,2 +1,1 @@
-# django-agentic-skills
-[EXPERIMENTAL] Django Agentic Skills
+# [EXPERIMENTAL] Django Agentic Skills

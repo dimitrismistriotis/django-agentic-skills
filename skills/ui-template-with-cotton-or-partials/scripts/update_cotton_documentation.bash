@@ -1,11 +1,11 @@
 #!/bin/env bash
 set -euo pipefail
 
-REFERENCE_DIRECTORY="$(cd "$(dirname "$0")/.." && pwd)/reference"
+DOCUMENTATION_DIRECTORY="$(cd "$(dirname "$0")/.." && pwd)/documentation"
 
-# echo  "Reference Directory: ${REFERENCE_DIRECTORY}"
+# echo  "Reference Directory: ${DOCUMENTATION_DIRECTORY}"
 
-COTTON_DIRECTORY="${REFERENCE_DIRECTORY}/django-cotton/"
+COTTON_DIRECTORY="${DOCUMENTATION_DIRECTORY}/django-cotton/"
 
 if [ ! -d "${COTTON_DIRECTORY}" ] || [ "$(find "${COTTON_DIRECTORY}" -maxdepth 0 -mtime +14 2>/dev/null)" ]; then
   echo "Cloning documentation in ${COTTON_DIRECTORY}"

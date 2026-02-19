@@ -10,4 +10,4 @@ https://github.com/wrabit/django-cotton
 
 ## Make sure that documentation is preseent
 
-To use for reference make sure that Cotton's documenation has been is present and has been updated in the last two weeks. Use `scripts/update_cotton_documentation.bash` for this
+To use documentation make sure that Cotton's documenation has been is present and has been updated in the last two weeks. Use `scripts/update_cotton_documentation.bash` for this. Then documentation is availavle in the "documentation" directory.

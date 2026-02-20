@@ -1,0 +1,3 @@
+# Contributing
+
+Please contribute :). Not sure on good guidelines for skills, this is a good first target to populate with content.

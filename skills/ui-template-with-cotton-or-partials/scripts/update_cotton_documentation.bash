@@ -7,6 +7,8 @@ DOCUMENTATION_DIRECTORY="$(cd "$(dirname "$0")/.." && pwd)/documentation"
 
 COTTON_DIRECTORY="${DOCUMENTATION_DIRECTORY}/django-cotton/"
 
+[[ -z "${COTTON_DIRECTORY}" ]] && { echo "Error: COTTON_DIRECTORY is empty"; exit 1; }
+
 if [ ! -d "${COTTON_DIRECTORY}" ] || [ "$(find "${COTTON_DIRECTORY}" -maxdepth 0 -mtime +14 2>/dev/null)" ]; then
   echo "Cloning documentation in ${COTTON_DIRECTORY}"
   rm -rf "${COTTON_DIRECTORY}"

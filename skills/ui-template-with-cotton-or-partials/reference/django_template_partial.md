@@ -77,7 +77,8 @@ A template fragment can be defined and rendered in-place using the inline argume
 </section>
 ```
 
-Accessing partials directly
+## Accessing partials directly
+
 Template fragments defined with partialdef can be accessed directly via template loading or inclusion using the `template.html#partial_name` syntax.
 
 For example, using the render() shortcut, the following code renders only the partial named user-info defined in the authors.html template:

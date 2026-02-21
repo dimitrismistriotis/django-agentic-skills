@@ -3,16 +3,27 @@ set -euo pipefail
 
 DOCUMENTATION_DIRECTORY="$(cd "$(dirname "$0")/.." && pwd)/documentation"
 
-# echo  "Reference Directory: ${DOCUMENTATION_DIRECTORY}"
-
 COTTON_DIRECTORY="${DOCUMENTATION_DIRECTORY}/django-cotton/"
 
 [[ -z "${COTTON_DIRECTORY}" ]] && { echo "Error: COTTON_DIRECTORY is empty"; exit 1; }
 
-if [ ! -d "${COTTON_DIRECTORY}" ] || [ "$(find "${COTTON_DIRECTORY}" -maxdepth 0 -mtime +14 2>/dev/null)" ]; then
-  echo "Cloning documentation in ${COTTON_DIRECTORY}"
+STAMP="${COTTON_DIRECTORY}/.last_updated"
+
+if [ ! -f "${STAMP}" ] || [ "$(find "${STAMP}" -mtime +14 2>/dev/null)" ]; then
+  echo "Updating Cotton documentation in ${COTTON_DIRECTORY}"
+
+  TEMP_DIR="$(mktemp -d)"
+  trap 'rm -rf "${TEMP_DIR}"' EXIT
+
+  git clone --depth 1 https://github.com/wrabit/django-cotton "${TEMP_DIR}/django-cotton"
+
   rm -rf "${COTTON_DIRECTORY}"
-  git clone --depth 1 https://github.com/wrabit/django-cotton "${COTTON_DIRECTORY}"
+  mkdir -p "${COTTON_DIRECTORY}"
+  mv "${TEMP_DIR}/django-cotton/docs/"* "${COTTON_DIRECTORY}/"
+
+  touch "${STAMP}"
+
+  echo "Cotton documentation updated successfully"
 else
-    echo "Cotton Documentation already available in ${COTTON_DIRECTORY}"
+  echo "Cotton documentation is up to date in ${COTTON_DIRECTORY}"
 fi

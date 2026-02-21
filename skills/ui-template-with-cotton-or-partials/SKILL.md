@@ -1,7 +1,7 @@
 ---
 name: ui-template-with-cotton-or-partials
 description: Creates Django template UI using Cotton components and/or Django partials for DRY, reusable code.
-allowed-tools: Read, Grep, Glob, Bash(git clone:*)
+allowed-tools: Read, Grep, Glob, Bash(git clone:*github.com/wrabit/django-cotton*)
 ---
 
 # Django Template Author with Cotton or Django Partials

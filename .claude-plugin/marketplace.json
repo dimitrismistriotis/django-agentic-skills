@@ -1,0 +1,36 @@
+{
+    "name": "django-agentic-skills",
+    "owner": {
+        "name": "Dimitrios Mistriotis",
+        "email": "dimitrios@mistriotis.com",
+        "url": "https://github.com/dimitrismistriotis"
+    },
+    "metadata": {
+        "description": "Skills to use while writing Python Django Applications",
+        "version": "0.1.0"
+    },
+    "plugins": [
+        {
+            "name": "ui-template-with-cotton-or-partials",
+            "source": "./skills/ui-template-with-cotton-or-partials/",
+            "description": "Django template author using Cotton components and/or Django partials for DRY, reusable UI",
+            "version": "0.1.0",
+            "author": {
+                "name": "Dimitrios Mistriotis"
+            },
+            "license": "AGPL-3.0",
+            "keywords": [
+                "django",
+                "templates",
+                "cotton",
+                "partials",
+                "ui",
+                "components"
+            ],
+            "strict": false,
+            "commands": [
+                "./skills/ui-template-with-cotton-or-partials/SKILL.md"
+            ]
+        }
+    ]
+}

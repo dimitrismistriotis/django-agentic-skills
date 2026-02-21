@@ -23,12 +23,15 @@ For extra readability, the name can be included in the {% endpartialdef %} closi
 {% partialdef user-info %}
     {# ... #}
 {% endpartialdef user-info %}
+```
+
 The template fragment can be rendered using the partial tag:
 
+```
 {% partial user-info %}
 ```
 
-##Fragment reuse
+## Fragment reuse
 
 A template fragment can be reused multiple times:
 

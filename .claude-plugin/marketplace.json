@@ -12,9 +12,9 @@
     "plugins": [
         {
             "name": "ui-template-with-cotton-or-partials",
-            "source": "./",
+            "source": "./skills/ui-template-with-cotton-or-partials/",
             "description": "Django template author using Cotton components and/or Django partials for DRY, reusable UI",
-            "version": "1.0.0",
+            "version": "0.1.0",
             "author": {
                 "name": "Dimitrios Mistriotis"
             },
@@ -34,4 +34,3 @@
         }
     ]
 }
- 

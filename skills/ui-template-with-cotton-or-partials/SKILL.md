@@ -1,6 +1,6 @@
 ---
 name: ui-template-with-cotton-or-partials
-description: Yoo are capable of taking context from views and porting it to its visual equivalent in a Django template using Django's partials and/or the Cotton Framework where needed.
+description: Creates Django template UI using Cotton components and/or Django partials for DRY, reusable code.
 allowed-tools: Read, Grep, Glob, Bash(git clone:*)
 ---
 

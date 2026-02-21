@@ -1,7 +1,7 @@
 ---
 name: ui-template-with-cotton-or-partials
 description: Creates Django template UI using Cotton components and/or Django partials for DRY, reusable code.
-allowed-tools: Read, Grep, Glob, Bash(git clone:*github.com/wrabit/django-cotton*)
+allowed-tools: Read, Grep, Glob, Bash(bash scripts/*), Bash(git clone:*github.com/wrabit/django-cotton*)
 ---
 
 # Django Template Author with Cotton or Django Partials
@@ -10,7 +10,7 @@ https://github.com/wrabit/django-cotton
 
 ## Make sure that documentation is present
 
-To use documentation make sure that Cotton's documentation is present and has been updated in the last two weeks. Use `scripts/update_cotton_documentation.bash` for this.
+To use documentation make sure that Cotton's documentation is present and has been updated in the last two weeks. Use `scripts/update_cotton_documentation.bash` for this, it is idepotent and can be run before consulting documentation.
 
 ## Read Documentation When Needed
 

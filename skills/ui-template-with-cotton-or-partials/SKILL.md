@@ -24,6 +24,22 @@ Create DRY code with regards to template UI so that when we change elements ther
 - When UI code is to be used within the same template, use a Django Partial
 - If a component is to be used in different places and different templates, then it should live in a Cotton component
 
+## Cotton Installation
+
+If pip is used:
+
+```shell
+pip install django-cotton
+```
+
+If uv is used:
+
+```shell
+uv add django-cotton
+```
+
+In `settings.py` make sure that `INSTALLED_APPS` contains 'django_cotton'.
+
 ## Usage Instructions
    
 Create UI elements per usual for Django. Then for each one which is used more than once contemplate if it should be abstracted to a partial or to a Cotton component as described above.

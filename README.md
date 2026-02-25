@@ -24,6 +24,11 @@ Or run `/plugin`, go to the **Discover** tab, and install interactively.
 
 ## Skills
 
+### `feature-switches-with-waffle`
+
+Uses Switches from [Django Waffle](https://waffle.readthedocs.io/en/stable/) to create a feature switchboard in templates, views, tests.
+
+
 ### `ui-template-with-cotton-or-partials`
 
 Takes context from Django views and ports it to its visual equivalent using Django's template partials and/or the [Cotton](https://github.com/wrabit/django-cotton) component framework.

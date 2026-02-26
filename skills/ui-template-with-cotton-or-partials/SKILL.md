@@ -10,7 +10,7 @@ https://github.com/wrabit/django-cotton
 
 ## Make sure that documentation is present
 
-To use documentation make sure that Cotton's documentation is present and has been updated in the last two weeks. Use `scripts/update_cotton_documentation.bash` for this, it is idepotent and can be run before consulting documentation.
+To use documentation make sure that Cotton's documentation is present and has been updated in the last two weeks. Use `scripts/update_cotton_documentation.bash` for this, it is idempotent and can be run before consulting documentation.
 
 ## Read Documentation When Needed
 
@@ -48,4 +48,4 @@ Check if Tailwind CSS is present in the project. If so, use it as much as you ca
 
 Request the user to have Django 5.2+ installed to be able to use partials. Install Cotton if it is not there. Write cotton components in the appropriate directory for the module, "COTTON_DIR" in settings or default to "cotton". Refer to the documentation for tool's usage.
 
-Do not suggest to create cotton compoments in layout files inherited from other templates.
+Do not suggest to create cotton idempotent in layout files inherited from other templates.

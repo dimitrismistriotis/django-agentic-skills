@@ -11,6 +11,28 @@
     },
     "plugins": [
         {
+            "name": "feature-switches-with-waffle",
+            "source": "./skills/feature-switches-with-waffle/",
+            "description": "Use feature switches to control introduction of new functionality and regressions with Django Waffle",
+            "version": "0.1.0",
+            "author": {
+                "name": "Dimitrios Mistriotis"
+            },
+            "license": "AGPL-3.0",
+            "keywords": [
+                "django",
+                "waffle",
+                "switches",
+                "testing",
+                "feature-switches",
+                "flow-control"
+            ],
+            "strict": false,
+            "commands": [
+                "./skills/ui-template-with-cotton-or-partials/SKILL.md"
+            ]
+        },
+        {
             "name": "ui-template-with-cotton-or-partials",
             "source": "./skills/ui-template-with-cotton-or-partials/",
             "description": "Django template author using Cotton components and/or Django partials for DRY, reusable UI",

@@ -1,3 +1,9 @@
+---
+name: feature-switches-with-waffle
+description: Use feature switches to control introduction of new functionality and regressions with Django Waffle
+allowed-tools: Read, Grep, Glob
+---
+
 # Feature Switch with Waffle
 
 Purpose of this task is to allow people managing the system to quickly revert new functionality in case a bug or any other side effects are discovered or even if they want to delay the release of a feature using a lite Circuit Breaker pattern.

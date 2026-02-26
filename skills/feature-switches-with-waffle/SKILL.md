@@ -79,3 +79,31 @@ Then to wrap functionality:
 ### Decorate Javascript
 
 Decided not to add it at this version of this skill.
+
+## Unit Tests
+
+Initially
+
+```python
+from waffle.testutils import override_switch
+```
+
+Then either
+
+```python
+with override_flag("flag_name", active=True):
+    # Only "flag_name" is affected, other flags behave normally.
+    assert waffle.flag_is_active(request, "flag_name")
+```
+
+... for a specific assertion, or
+
+```python
+@override_sample("sample_name", active=True)
+def test_with_sample():
+    # Only "sample_name" is affected, and will always be True. Other
+    # samples behave normally.
+    assert waffle.sample_is_active("sample_name")
+```
+
+for whole tests very dependent on a switch.

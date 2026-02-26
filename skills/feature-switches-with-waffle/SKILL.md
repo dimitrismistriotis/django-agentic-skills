@@ -136,7 +136,7 @@ and setting `active=False` for regression
 ```python
 @override_switch("switch_name", active=False)
 def test_with_switch_not_active():
-    assert waffle.switch_is_active("switch_name")
+    assert not waffle.switch_is_active("switch_name")
 ```
 
 for whole tests very dependent on a switch.

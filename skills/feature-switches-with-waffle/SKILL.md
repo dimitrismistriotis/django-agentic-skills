@@ -58,10 +58,10 @@ Code should be like:
 ```python
 import waffle
 
-if waffle.switch_is_active('switch_name')
-  # implement "new" untested functionality
+if waffle.switch_is_active("switch_name"):
+    # implement "new" untested functionality
 else:
-  # Current, established functionality
+    # Current, established functionality
 ```
 
 ### Decorate Views

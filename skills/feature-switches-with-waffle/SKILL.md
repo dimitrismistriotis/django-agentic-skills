@@ -10,7 +10,7 @@ Install with uv with:
 
 
 ```shell
-uv add waffle
+uv add django-waffle
 ```
 
 ## Setup
@@ -20,7 +20,7 @@ Check project's `settings.py`. There are many settings in <https://waffle.readth
 
 Check if at least one `WAFFLE_` parameter is set, if so assume user has setup Waffle for their project and do not suggest to setup again, notify though about it:
 
-> "It seems that Waffle has been setup from reading your setting file
+> "It seems that Waffle has been setup from reading your setting file.
 
 Definitely discuss the following:
 
@@ -76,7 +76,7 @@ def my_other_view(request):
 from waffle.mixins import WaffleSwitchMixin
 
 class MyClass(WaffleSwitchMixin, View):
-    waffle_switch= "my_switch"
+    waffle_switch = "my_switch"
 ```
 
 ### Decorate Templates

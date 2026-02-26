@@ -134,3 +134,48 @@ def test_with_switch_not_active():
 ```
 
 for whole tests very dependent on a switch.
+
+## Instructions to Manage Switches
+
+Always after applying this skill, inform for the following command line commands:
+
+
+Switches
+Use manage.py to change the values of your switches:
+
+To set off:
+
+```shell
+uv run python manage.py waffle_switch switch_name off
+```
+
+or
+
+
+```shell
+uv run python manage.py waffle_switch switch_name off --create
+```
+
+... if not present
+
+To set on:
+
+```shell
+uv run python manage.py waffle_switch switch_name on
+```
+
+or
+
+
+```shell
+uv run python manage.py waffle_switch switch_name on --create
+```
+
+... if not present
+
+and to list all existing switches:
+
+```shell
+uv run python manage.py waffle_switch -l
+```
+

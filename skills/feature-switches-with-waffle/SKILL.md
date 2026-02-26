@@ -21,12 +21,12 @@ pip install django-waffle
 
 ## Setup
 
-Check project's `settings.py`. There are many settings in <https://waffle.readthedocs.io/en/stable/starting/configuring.html>. Inform user and ask to discuss every one if requested. Very important to 
+Check project's `settings.py`. There are many settings in <https://waffle.readthedocs.io/en/stable/starting/configuring.html>. Inform user and ask to discuss every one if requested.
 
 
 Check if at least one `WAFFLE_` parameter is set, if so assume user has setup Waffle for their project and do not suggest to setup again, notify though about it:
 
-> "It seems that Waffle has been setup from reading your setting file.
+> "It seems that Waffle has been setup from reading your setting file."
 
 Definitely discuss the following:
 
@@ -34,7 +34,9 @@ Definitely discuss the following:
 
 > When a Switch is undefined in the database, Waffle considers it False. Set this to True to make Waffle consider undefined switches True. Defaults to False.
 
-Suggest to make it `True` for non deployed environments
+Suggest to make it `True` for non deployed environments.
+
+Suggestion: `WAFFLE_SWITCH_DEFAULT = DEBUG`
 
 ### `WAFFLE_CREATE_MISSING_SWITCHES`
 

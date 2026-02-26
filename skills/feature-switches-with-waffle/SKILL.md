@@ -13,6 +13,12 @@ Install with uv with:
 uv add django-waffle
 ```
 
+Install with pip:
+
+```shell
+pip install django-waffle
+```
+
 ## Setup
 
 Check project's `settings.py`. There are many settings in <https://waffle.readthedocs.io/en/stable/starting/configuring.html>. Inform user and ask to discuss every one if requested. Very important to 
@@ -114,7 +120,7 @@ Then either
 ```python
 with override_switch("switch_name", active=True):
     # Only "switch_name" is affected, other ones behave normally.
-    assert waffle.switch_is_active(request, "switch_name")
+    assert waffle.switch_is_active("switch_name")
 ```
 
 ... for a specific assertion, or

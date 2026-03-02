@@ -2,7 +2,7 @@
 
 In this repository I wanted to code up some skills to be used in sub agents or agentic development. I have not seen many repositories about the Django framework and because they are quite generic, I decided to release this as open source for the benefit of the community.
 
-Please contribute and extend, find issues, etc. Currently there are very, very few — OK, one — to demonstrate intent. Hopefully their number will increase soon.
+Please contribute and extend, find issues, etc. Currently there are very, very few to demonstrate intent. Hopefully their number will increase soon.
 
 ## Installation
 
@@ -17,12 +17,26 @@ Requires Claude Code **1.0.33 or later**.
 **2. Install a skill:**
 
 ```shell
+/plugin install feature-switches-with-waffle@django-agentic-skills
+```
+
+```shell
 /plugin install ui-template-with-cotton-or-partials@django-agentic-skills
 ```
 
 Or run `/plugin`, go to the **Discover** tab, and install interactively.
 
 ## Skills
+
+### `feature-switches-with-waffle`
+
+Uses Switches from [Django Waffle](https://waffle.readthedocs.io/en/stable/) to create a feature switchboard in templates, views, tests.
+
+- Uses **Waffle switches** to gate new functionality behind a flag
+- Supports **function-based views**, **class-based views**, and **templates**
+- Includes **unit test utilities** (`override_switch`) for testing both active and inactive states
+- Provides `manage.py` commands to toggle switches at runtime without a deployment
+
 
 ### `ui-template-with-cotton-or-partials`
 

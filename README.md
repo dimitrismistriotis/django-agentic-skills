@@ -26,6 +26,20 @@ Requires Claude Code **1.0.33 or later**.
 
 Or run `/plugin`, go to the **Discover** tab, and install interactively.
 
+**3. Update a skill:**
+
+Skills are installed from the latest version on the `master` branch. To update a skill to the latest version, re-run the install command:
+
+```shell
+/plugin install feature-switches-with-waffle@django-agentic-skills
+```
+
+To update all installed skills from this marketplace at once:
+
+```shell
+/plugin marketplace update dimitrismistriotis/django-agentic-skills
+```
+
 ## Skills
 
 ### `feature-switches-with-waffle`

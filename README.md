@@ -24,6 +24,10 @@ Requires Claude Code **1.0.33 or later**.
 /plugin install ui-template-with-cotton-or-partials@django-agentic-skills
 ```
 
+```shell
+/plugin install start-app@django-agentic-skills
+```
+
 Or run `/plugin`, go to the **Discover** tab, and install interactively.
 
 **3. Update a skill:**
@@ -50,6 +54,17 @@ Uses Switches from [Django Waffle](https://waffle.readthedocs.io/en/stable/) to 
 - Supports **function-based views**, **class-based views**, and **templates**
 - Includes **unit test utilities** (`override_switch`) for testing both active and inactive states
 - Provides `manage.py` commands to toggle switches at runtime without a deployment
+
+
+### `start-app`
+
+Creates a new Django app and wires it into the project automatically.
+
+- Runs `manage.py startapp`, optionally using a **custom template directory**
+- Auto-discovers template folders in the project root and prompts before using one
+- Adds the app to **`INSTALLED_APPS`** in the settings file (located via `DJANGO_SETTINGS_MODULE`)
+- Registers a URL prefix in the main **`urls.py`** (only when the template provides a `urls.py`)
+- Appends the app's test path to **`pyproject.toml`** when `[tool.pytest.ini_options]` is present
 
 
 ### `ui-template-with-cotton-or-partials`

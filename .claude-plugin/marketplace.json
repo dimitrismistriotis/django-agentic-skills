@@ -33,6 +33,26 @@
             ]
         },
         {
+            "name": "start-app",
+            "source": "./skills/start-app/",
+            "description": "Creates a new app from a template if present and adds it to settings and URLs",
+            "version": "0.1.0",
+            "author": {
+                "name": "Dimitrios Mistriotis"
+            },
+            "license": "AGPL-3.0",
+            "keywords": [
+                "django",
+                "app",
+                "scaffold",
+                "template"
+            ],
+            "strict": false,
+            "commands": [
+                "./skills/start-app/SKILL.md"
+            ]
+        },
+        {
             "name": "ui-template-with-cotton-or-partials",
             "source": "./skills/ui-template-with-cotton-or-partials/",
             "description": "Django template author using Cotton components and/or Django partials for DRY, reusable UI",
